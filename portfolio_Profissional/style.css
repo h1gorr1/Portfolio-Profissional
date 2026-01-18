@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* HEADER */
+header{
+    text-align: center;
+    padding: 1rem;
+    background-color: black;
+}
+
+.linha{
+    width: 100%;
+    height: 0.4rem;
+    background-color: #7b2cbf;
+}
+
+header h1{
+    color: white;
+}
+
+/* SEÇÃO PRINCIPAL */
+#secao1{
+    padding: 4rem 2rem;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #480ca8;
+}
+
+/* TEXTO */
+.texto{
+    max-width: 50%;
+}
+
+.texto h1{
+    color: white;
+    font-size: 2.5rem;
+}
+
+.texto h2{
+    color: white;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    margin-left: 6rem;
+}
+
+.Destaque{
+    color: #bbd0ff;
+}
+
+/* ===== CONTATOS ===== */
+.contatos{
+    display: flex;
+    gap: 15px;
+    margin-top: 2rem;
+    margin-left: 10rem;
+}
+
+/* ===== BOTÃO DE ÍCONE ===== */
+.contatos i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #5e548e;
+    color: white;
+    text-decoration: none;
+
+    font-size: 1.5rem;
+    transition: 0.3s;
+}
+
+/* ===== HOVER ===== */
+.contatos i:hover{
+    background-color: #5e548e;
+    transform: scale(1.1);
+}
+
+
+/* IMAGEM */
+.imagem img{
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+#secao2{
+    padding: 4rem 2rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #aed9e0;
+}
+
+.mae{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-left: 8rem;
+    margin-top: 3rem;
+}
+
+.mae div{
+    display: flex;
+    margin-right: 4rem;
+    flex-direction: column;
+}
+
+.mae p{
+    margin-top: 15px;
+}
+
+@media (max-width: 768px){
+    #secao1{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .texto{
+        max-width: 100%;
+    }
+
+    .imagem img{
+        margin-top: 2rem;
+        width: 220px;
+    }
+}
+
+.mae i{
+font-size: 5rem;
+}
+
+.mae i:hover{
+    transform: translateY(-10px); /* sobe */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2); /* efeito de elevação */
+}
+
+#secao3{
+    padding: 4rem 2rem;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.pai{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    align-items: center;
+}
+
+.pai > div{
+    max-width: 600px;
+}
+
+.pai img{
+    width: 50rem;
+    height: auto;
+    border-radius: 10px;
+    
+}
+
+
