@@ -9,18 +9,23 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="shortcut icon" href="imgs/Img_Portfolio_ok.png" type="image/x-icon">
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
 
 </head>
 
 <body>
-    <header>
+    <header class="efeitoheader">
         <h1>Portfólio</h1>
     </header>
     <hr class="linha">
 
-    <section id="secao1">
+    <section id="secao1" class="section1">
         <div class="texto">
-            <h1>Olá,Eu Sou 
+            <h1>Olá,Eu Sou
                 <span class="Destaque">Higor Kaique! :) </span>
             </h1>
 
@@ -38,6 +43,10 @@
                 <a href="mailto:h1gorr3210@gmail.com" class="btn-icon">
                     <i class="fa-solid fa-envelope"></i>
                 </a>
+
+                <a href="Higorcurriculo.pdf" download>
+                    <button class="btn-cv">Baixar Currículo</button>
+                </a>
             </div>
         </div>
 
@@ -46,7 +55,7 @@
         </div>
     </section>
 
-    <section id="secao2">
+    <section id="secao2" class="section2">
         <h2>Minhas Principais Habilidades: </h2>
         <div class="mae">
             <div>
@@ -67,10 +76,6 @@
                 <p>PYTHON</p>
             </div>
             <div>
-                <i class="fa-brands fa-react"></i>
-                <p>REACT NATIVE</p>
-            </div>
-            <div>
                 <i class="devicon-javascript-plain"></i>
 
 
@@ -80,29 +85,41 @@
         </div>
     </section>
 
-    <section id="secao3">
+    <section id="secao3" class="section3">
         <h2>Projetos Criados:</h2>
         <div class="pai">
-            <div>
+            <div class="projeto">
                 <img src="imgs/Trabalho_Projeto_Banco.png" alt="Imagem Do Projeto Simulador Do Caixa Eletrónico! ">
                 <p>Imagem Do Trabalho Simulador Do Caixa Eletrónico Em Que Desenvolvi Recentemente Com menos De 1 Semana
                     De Estudo Em JAVA</p>
-                <a href="https://github.com/h1gorr1/Projeto-Caixa-Eletronico" target="_blank"><button>Clique Aqui E Veja
-                        Melhor Este Simulador De Caixa Eletrónico!!! </button></a>
+                <a href="https://github.com/h1gorr1/Projeto-Caixa-Eletronico" target="_blank"><button
+                        class="btn-projeto">Clique Aqui E Veja
+                        Melhor Este Simulador De Caixa Eletrónico! >> </button></a>
 
             </div>
 
-            <div>
+            <div class="projeto">
                 <img src="imgs/Projeto_Educa_Bank.png" alt="Imagem Do Projeto Educa-Bank">
                 <p>Imagem Mostrando Um Projeto Do Educa-Bank, Um Banco Referecia Para Professores!</p>
-                <a href="https://github.com/h1gorr1/pagina-Educa-bank" target="_blank"><button>Clique Aqui E Saiba Mais
-                        Sobre O Projeto Educa-Bank!</button></a>
+                <a href="https://github.com/h1gorr1/pagina-Educa-bank" target="_blank"><button
+                        class="btn-projeto">Clique Aqui E Saiba Mais
+                        Sobre O Projeto Educa-Bank! >></button></a>
             </div>
         </div>
 
 
     </section>
 
+    <footer class="rodape">
+        <p>© 2026 — Higor Kaique</p>
+        <div class="rodape-links">
+            <a href="https://github.com/h1gorr1" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/h1gor-kaique-134535314/" target="_blank">LinkedIn</a>
+            <a href="mailto:h1gorr3210@gmail.com">Email</a>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
 </body>
 
 </html>

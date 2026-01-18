@@ -5,6 +5,15 @@
     text-decoration: none;
 }
 
+html{
+    font-size: 16px;
+}
+
+h1, h2,p, .titulo-legal {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
 /* HEADER */
 header{
     text-align: center;
@@ -58,7 +67,7 @@ header h1{
     display: flex;
     gap: 15px;
     margin-top: 2rem;
-    margin-left: 10rem;
+    margin-left: 4rem;
 }
 
 /* ===== BOTÃO DE ÍCONE ===== */
@@ -117,21 +126,7 @@ header h1{
     margin-top: 15px;
 }
 
-@media (max-width: 768px){
-    #secao1{
-        flex-direction: column;
-        text-align: center;
-    }
 
-    .texto{
-        max-width: 100%;
-    }
-
-    .imagem img{
-        margin-top: 2rem;
-        width: 220px;
-    }
-}
 
 .mae i{
 font-size: 5rem;
@@ -146,7 +141,7 @@ font-size: 5rem;
     padding: 4rem 2rem;
     align-items: center;
     text-align: center;
-    
+    text-align: center;
 }
 
 .pai{
@@ -154,10 +149,21 @@ font-size: 5rem;
     flex-direction: column;
     gap: 4rem;
     align-items: center;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.pai .projeto img{
+     transform: translateX(-5rem); /* esquerda */
+}
+
+.pai div{
+    text-align: center;
 }
 
 .pai > div{
     max-width: 600px;
+    
 }
 
 .pai img{
@@ -166,5 +172,144 @@ font-size: 5rem;
     border-radius: 10px;
     
 }
+
+.btn-projeto{
+    margin-top: 1.5rem;
+    padding: 0.9rem 1.8rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    background: linear-gradient(135deg, #6a5acd, #836fff);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+}
+
+/* efeito hover */
+.btn-projeto:hover{
+    transform: translateY(-4px) scale(1.03);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+    background: linear-gradient(135deg, #836fff, #6a5acd);
+}
+
+/* efeito clique */
+.btn-projeto:active{
+    transform: translateY(0) scale(0.98);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.pai p{
+    margin-top: 20px;
+}
+
+.rodape{
+    margin-top: 5rem;
+    padding: 2rem;
+    background-color: #111;
+    color: #aaa;
+    text-align: center;
+}
+
+.rodape-links{
+    margin-top: 1rem;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.rodape-links a{
+    color: #836fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.rodape-links a:hover{
+    text-decoration: underline;
+}
+
+.btn-cv{
+    padding: 0.9rem 1.8rem;
+    font-size: 1rem;
+    font-weight: 600;
+    background: #00c896;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-cv:hover{
+    background: #00a87a;
+    transform: translateY(-3px);
+}
+
+@media (max-width: 768px){
+
+    /* ===== SEÇÃO 1 ===== */
+    #secao1{
+        flex-direction: column;
+        text-align: center;
+        padding: 3rem 1.5rem;
+    }
+
+    .texto h2{
+        margin-left: 0;
+    }
+
+    .contatos{
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    .imagem img{
+        width: 220px;
+        margin-top: 2rem;
+    }
+
+    /* ===== SEÇÃO 2 ===== */
+    .mae{
+        flex-direction: column;
+        margin-left: 0;
+        gap: 2.5rem;
+    }
+
+    .mae div{
+        margin-right: 0;
+    }
+
+    /* ===== SEÇÃO 3 ===== */
+    .pai{
+        gap: 3rem;
+    }
+
+    .pai .projeto img{
+        transform: none;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .pai > div{
+        max-width: 100%;
+    }
+
+    /* ===== BOTÕES ===== */
+    .btn-projeto,
+    .btn-cv{
+        width: 100%;
+        max-width: 320px;
+    }
+
+    /* ===== RODAPÉ ===== */
+    .rodape-links{
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+}
+
+
+
 
 
