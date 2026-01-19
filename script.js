@@ -23,8 +23,3 @@ revelar.reveal('.section3', {
     origin: 'bottom'
 });
 
-revelar.reveal('.rodape', {
-    duration: 3000,
-    distance: '150px',
-    origin: 'bottom'
-});
